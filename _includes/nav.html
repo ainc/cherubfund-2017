@@ -1,0 +1,40 @@
+<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top navbar-static" >
+      <div class="container">
+        <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/"><img class="mobile" src="/assets/img/Cherub-Fund-Website-Logo.png" alt="APAX Software Logo" height="45px" style="margin-top: 4px;"> </a>
+           <!-- Old Header Text 
+           <a class="navbar-brand" href="#"><b>Awesome Inc</b></a>
+           -->
+           <!-- Added to make the logo move down a little.
+           -->
+          <!-- <div style="margin: 0px; padding:0px; clear: both; height: 6px"> -->
+        &nbsp;
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul id="sddm" class="nav navbar-nav navbar-right" style="min-width:0"> <!-- RIGHT ALIGNED NAVBAR -->
+            <li {% if page.path contains 'about' %} class="active" {% endif %}>   <!-- ABOUT -->
+                <a data-toggle="collapse" data-target=".navbar-collapse" href="/about/">About</a>
+              </li> 
+            <li {% if page.path contains 'members' %} class="active" {% endif %}>  <!-- SERVICES -->
+                <a data-toggle="collapse" data-target=".navbar-collapse" href="/members/">Members</a>
+              </li>
+            <li {% if page.path contains 'portfolio' %} class="active" {% endif %}>    <!-- Work -->
+                <a data-toggle="collapse" data-target=".navbar-collapse" href="/portfolio/">Portfolio</a>
+            </li>
+            <li {% if page.path contains 'entrepreneurs' %} class="active" {% endif %}>   <!-- Team -->
+                <a data-toggle="collapse" data-target=".navbar-collapse"  href="//">Entrepreneurs </a>
+              </li>
+            <li {% if page.path contains 'contact' %} class="active" {% endif %}> <!-- Contact -->
+                <a data-toggle="collapse" data-target=".navbar-collapse"  href="/contact/">Contact</a>
+            </li>
+          </div>
+          <!-- <div style="clear:both"></div> -->
+        </div><!--/.nav-collapse -->
+    </div>

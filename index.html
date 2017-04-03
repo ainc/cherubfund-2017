@@ -1,0 +1,51 @@
+---
+layout: page
+redirect_from:
+ - category/apax-news.html
+ - category/apax-blog.html
+ - testimonials.html
+ - community.html
+---
+
+	<video id="bg-video" class="video" autoplay="autoplay" loop="loop" muted="true" >
+		<source src="assets/media/bg-.mp4" type="video/mp4" />
+		<source src="assets/media/bg.ogv" type="video/ogg" />
+		<source src="assets/media/bg.webm" type="video/webm" />
+	</video>
+
+    <div id="headerwrap">
+		<div class="container" id="scene">
+				<h1 class="subtitle center fade-in-top">Cherub Fun<span style="letter-spacing: 0">d</span></h1>
+				<h2 class="center fade-in-bot">Providing Entreprenuers with the Foundation They Need.</h2>
+
+
+				<h3 class="center fade-in-bot">
+					<a href="/members">
+						Who We Are
+						<br>
+						<i class="fa fa-chevron-circle-right"></i>
+					</a>
+				</h3>
+		</div><!-- /container -->
+    </div> <!-- /headerwrap -->
+
+<script>
+	$(document).ready(function(){
+   var $form = $('form');
+   $form.submit(function(){
+      $.post($(this).attr('action'), $(this).serialize(), function(response){
+      		$('.form-btn').toggle()
+            $('.form-complete').toggle()
+      },'json');
+      return false;
+   });
+});
+</script>
+	
+	
+	
+
+<!-- /White Wrap Version 2 - The Space -->	
+		</div><!-- /row -->
+	</div><!-- /container -->
+</div><!-- /info -->	
